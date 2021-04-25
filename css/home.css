@@ -1,0 +1,526 @@
+/* This is the navigation bar */
+
+<<<<<<< Updated upstream
+blockquote {
+	padding-left: 15px;
+	border-left: #49ABF8 solid 3px;
+	font-style: italic;
+}
+
+.big-start::first-letter {
+	float: left;
+  font-size: 5rem;
+  line-height: 0.45;
+  margin: 0.2em 0.1em 0.1em 0;
+}
+
+.center, .center-column, .top, .right, .bottom, .left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+=======
+.is-paddingless-horizontal {
+    padding-left: 0;
+    padding-right: 0;
+>>>>>>> Stashed changes
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: [xl-start] 1fr 1.5rem [md-start] minmax(0, 624px) [md-end] 1.5rem 1fr [xl-end];
+}
+
+.grid * {
+    grid-column: md;
+}
+
+.grid-xl {
+    grid-column: xl;
+}
+
+
+/* This is the hero section */
+
+.hero-body {
+    background: #1f1f1f url(/images/hero.jpg) center/cover;
+    background-blend-mode: overlay;
+}
+
+
+/* This is the first text section */
+
+.first-content {
+    grid-area: a;
+    text-align: left;
+    align-self: center;
+    max-width: 25vw;
+}
+
+.first-image {
+    grid-area: b;
+    max-height: 450px;
+    max-width: 450px;
+    align-self: end;
+    justify-self: end;
+}
+
+.second-image {
+    grid-area: c;
+    max-height: 450px;
+    max-width: 450px;
+    align-self: start;
+    justify-self: start;
+}
+
+.second-content {
+    grid-area: d;
+    text-align: right;
+    align-self: center;
+    justify-self: end;
+    max-width: 25vw;
+}
+
+#first-text-section {
+    margin-top: 8vh;
+}
+
+
+/* This is the success section */
+
+.sucess-fill {
+    margin-top: 10vh;
+    background-color: #49ABF8;
+    color: white;
+}
+
+.sucess-content {
+    grid-area: sc;
+}
+
+.sucess-content h2 {
+    max-width: 12vw;
+    margin-top: 4vh;
+}
+
+.sucess-content p {
+    max-width: 20vw;
+    margin-top: 2vh;
+}
+
+.a1 {
+    grid-area: a1;
+    margin-top: 4vh;
+}
+
+.a2 {
+    grid-area: a2;
+    margin-top: 4vh;
+}
+
+.a3 {
+    grid-area: a3;
+    margin-top: 4vh;
+}
+
+.a4 {
+    grid-area: a4;
+}
+
+.a5 {
+    grid-area: a5;
+}
+
+.a6 {
+    grid-area: a6;
+}
+
+.a7 {
+    grid-area: a7;
+    margin-bottom: 4vh;
+}
+
+.a8 {
+    grid-area: a8;
+    margin-bottom: 4vh;
+}
+
+.a9 {
+    grid-area: a9;
+    margin-bottom: 4vh;
+}
+
+.card footer {
+    background-color: black;
+    color: white;
+}
+
+.card p {
+    margin-left: 1vw;
+}
+
+.sucess-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 4vw;
+    row-gap: 2vh;
+    grid-template-areas: "sc sc a1 a2 a3" "sc sc a4 a5 a6" "sc sc a7 a8 a9";
+}
+
+.span-col-2 {
+    grid-column: span 2 / auto;
+}
+
+.span-row-3 {
+    grid-row: span 3 / auto;
+}
+
+
+/* this is message section */
+
+.messages-section {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.open-quote-image {
+    max-width: 10vw;
+    max-height: 10vh;
+}
+
+.message-content-section {
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0px;
+    grid-template-areas: "fp fm sm sp";
+}
+
+.first-person {
+    grid-area: fp;
+    flex-direction: row;
+    justify-self: flex-end;
+}
+
+.message-first-person {
+    grid-area: fm;
+    margin: auto;
+    margin-right: 2vw;
+    text-align: right;
+    line-height: 2vh;
+    max-width: 20vw;
+}
+
+.message-second-person {
+    grid-area: sm;
+    margin: auto;
+    margin-left: 2vw;
+    text-align: left;
+    line-height: 2vh;
+    max-width: 20vw;
+}
+
+.second-person {
+    grid-area: sp;
+    flex-direction: row;
+    justify-self: flex-start;
+}
+
+.first-saying {
+    max-width: 20vw;
+    margin-top: 2vh;
+}
+
+.second-saying {
+    max-width: 20vw;
+    margin-top: 2vh;
+}
+
+.message-content-section img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.close-quote-image {
+    margin-top: 4vh;
+    align-self: flex-end;
+    max-width: 10vw;
+    max-height: 10vh;
+}
+
+.mid-mobile {
+    display: none;
+}
+
+
+/* Footer styles.. */
+
+.footer-fill {
+    margin-top: 10vh;
+    background-color: black;
+}
+
+.text-title-about {
+    color: white;
+}
+
+.text-title-about .subtitle {
+    color: white;
+}
+
+.form-first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.is-horizontal-center {
+    justify-content: center;
+}
+
+.say-size {
+    max-height: 256px;
+    max-width: 256px;
+}
+
+@media(max-width: 769px) {
+    /* <== You can change this break point as per your  needs */
+    .reverse-columns {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+    .say-size {
+        max-height: 100px;
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .desktop {
+        display: none;
+    }
+    .left {
+        justify-content: center;
+    }
+    .navbar-item {
+        display: flex;
+    }
+    .first-content {
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        max-width: 30vw;
+    }
+    .first-image {
+        max-width: 70%;
+        align-self: end;
+        justify-self: center;
+    }
+    .second-image {
+        max-width: 70%;
+        align-self: center;
+        justify-self: center;
+        margin-top: 2vh;
+        ;
+    }
+    .second-content {
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        max-width: 30vw;
+    }
+    .sucess-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 4vw;
+        row-gap: 2vh;
+        grid-template-areas: "sc sc sc" "a1 a2 a3" "a4 a5 a6" "a7 a8 a9";
+    }
+    .span-col-2 {
+        grid-column: span 3 / auto;
+    }
+    .span-row-3 {
+        grid-column: span 3 / auto;
+    }
+    .sucess-content {
+        grid-area: sc;
+        justify-self: center;
+    }
+    .sucess-content h2 {
+        max-width: 75vw;
+        margin-top: 4vh;
+        text-align: center;
+    }
+    .sucess-content p {
+        max-width: 75vw;
+        margin-top: 2vh;
+        text-align: center;
+    }
+}
+
+@media (max-width: 760px) {
+    .tab {
+        display: none;
+    }
+    .left {
+        justify-content: flex-start;
+    }
+    body {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+    .first-text-section {
+        grid-gap: 0rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "a a" "b c" "d d";
+    }
+    .first-content {
+        max-width: 90vw;
+    }
+    .first-image {
+        max-width: 100%;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+    .second-image {
+        max-width: 100%;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+    .second-content {
+        max-width: 90vw;
+    }
+    .a3 {
+        display: none;
+    }
+    .a6 {
+        display: none;
+    }
+    .a9 {
+        display: none;
+    }
+    .a1,
+    .a4,
+    .a7 {
+        margin-left: 2vw;
+    }
+    .a2,
+    .a5,
+    .a8 {
+        margin-right: 2vw;
+    }
+    .sucess-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4vw;
+        row-gap: 2vh;
+        grid-template-areas: "sc sc" "a1 a2" "a4 a5" "a7 a8";
+    }
+    .span-col-2 {
+        grid-column: span 2 / auto;
+    }
+    .span-row-3 {
+        grid-column: span 2 / auto;
+    }
+    .sucess-content {
+        grid-area: sc;
+        justify-self: center;
+    }
+    .sucess-content h2 {
+        max-width: 90vw;
+    }
+    .sucess-content p {
+        max-width: 90vw;
+    }
+}
+
+@media(min-width:759px) {
+    .mobile {
+        display: none;
+    }
+    .left {
+        justify-content: flex-start;
+    }
+}
+
+@media(max-width:917px) {
+    .mid-mobile {
+        display: block;
+    }
+    .mid-tab {
+        display: none;
+    }
+    .open-quote-image {
+        margin-top: 10vh;
+        margin-bottom: 4vh;
+    }
+    .close-quote-image {
+        margin-top: 12vh;
+        align-self: flex-end;
+    }
+    .message-content-section {
+        margin-top: 6vh;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0px;
+        grid-template-areas: "fm" "fp" "sm" "sp";
+    }
+    .first-person {
+        grid-area: fp;
+        display: flex;
+        margin-top: 2vh;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .shrunken-first-person {
+        grid-area: fp;
+        margin-top: 1vh;
+        line-height: 0.1vh;
+        justify-self: center;
+        align-self: center;
+    }
+    .message-first-person {
+        grid-area: fm;
+        margin-right: 0vw;
+        text-align: center;
+        line-height: 2.5vh;
+        max-width: 100vw;
+    }
+    .message-second-person {
+        grid-area: sm;
+        margin-left: 0vw;
+        text-align: center;
+        line-height: 2.5vh;
+        max-width: 100vw;
+        margin-top: 4vh;
+    }
+    .second-person {
+        grid-area: sp;
+        flex-direction: row;
+    }
+    .shrunken-second-person {
+        grid-area: sp;
+        margin-top: 1vh;
+        line-height: 0.1vh;
+        justify-self: center;
+        align-self: center;
+    }
+    .message-first-person .title {
+        margin-bottom: 1vh;
+    }
+    .message-second-person .title {
+        margin-bottom: 1vh;
+    }
+    .first-saying {
+        max-width: 90vw;
+        margin-top: 0vh;
+    }
+    .second-saying {
+        max-width: 90vw;
+        margin-top: 0vh;
+    }
+    .message-content-section img {
+        max-width: 128px;
+        max-height: 128px;
+    }
+}

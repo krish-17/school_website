@@ -1,0 +1,23 @@
+
+
+
+
+<!-- Bulma card region template  -->
+{{ if gt .item_num 6 }}
+            <div class="column is-one-third-desktop is-half-tablet is-half-mobile is-hidden-touch">
+        {{ else }}
+            <div class="column is-one-third-desktop is-half-tablet is-half-mobile">
+{{ end }}
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-4by3">
+          <img src="{{ .image_url }}" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="card-content px-1 py-1">
+        <div class="content is-size-7">
+          {{.image_desc}}
+        </div>
+      </div>
+    </div>
+  </div>

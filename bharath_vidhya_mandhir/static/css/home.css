@@ -1,0 +1,115 @@
+/* This is the navigation bar */
+
+.center,
+.center-column,
+.top,
+.right,
+.bottom,
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-column {
+    flex-direction: column;
+}
+
+.top {
+    align-items: flex-start;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.bottom {
+    align-items: flex-end;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.single-spaced,
+.single-spaced * {
+    line-height: 1;
+}
+
+.is-paddingless-horizontal {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: [xl-start] 1fr 1.5rem [md-start] minmax(0, 624px) [md-end] 1.5rem 1fr [xl-end];
+}
+
+.grid * {
+    grid-column: md;
+}
+
+.grid-xl {
+    grid-column: xl;
+}
+
+
+/* This is the hero section */
+
+.hero-body {
+    background: #1f1f1f url(/images/hero.jpg) center/cover;
+    background-blend-mode: overlay;
+}
+
+
+/* This is the first text section */
+
+
+/* This is the success section */
+
+
+/* this is message section */
+
+.is-horizontal-center {
+    justify-content: center;
+}
+
+.say-size {
+    max-height: 256px;
+    max-width: 256px;
+}
+
+
+/* Footer styles.. */
+
+.footer-fill {
+    margin-top: 10vh;
+    background-color: black;
+}
+
+.text-title-about {
+    color: white;
+}
+
+.text-title-about .subtitle {
+    color: white;
+}
+
+.form-first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media(max-width: 769px) {
+    /* <== You can change this break point as per your  needs */
+    .reverse-columns {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+    .say-size {
+        max-height: 100px;
+        max-width: 100px;
+    }
+}

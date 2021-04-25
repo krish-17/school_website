@@ -1,0 +1,92 @@
+body {
+        font-family: sans-serif;
+}
+
+.title {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.title img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.title .nav-menu {
+    align-self: baseline;
+    width: 1.5rem;
+    height: 1.5rem;
+} 
+.hero {
+    color: white;
+    background-image: url(/images/hero.jpg);
+    background-position: center;
+    background-size: 30em;
+    background-color: rgb(32, 32, 32);
+    background-blend-mode: overlay;
+    height: 20rem;
+}
+.hero h2 {
+    font-size: 18;
+    padding-top: 4rem;
+    text-align: center;
+}
+.hero p {
+    position: relative;
+    text-align: center;
+    font-size: 12;
+    margin-top: 0rem;
+}
+
+.hero-button-window {
+    display:grid;
+    row-gap: 1rem;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.hero-button-window button {
+    align-self: center;
+    font-size: 12;
+    text-align: center;
+    padding: .4rem;
+    color: white;
+}
+
+.hero-admit {
+    background-color: #49ABF8;
+    border-style: none;
+}
+.hero-contact {
+    background-color: transparent;
+    border-color: #49ABF8;
+}
+
+.second-section {
+    margin-top: 4rem;
+}
+.second-section h2 {
+    text-align: center;
+}
+
+.second-section p {
+    margin-top: 0rem;
+    text-align: center;
+}
+
+.position-section-two-images {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.position-section-two-images img {
+    height: 10rem;
+    width: 10rem;
+}
+
+
+

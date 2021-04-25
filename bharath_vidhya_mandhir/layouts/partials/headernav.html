@@ -1,0 +1,44 @@
+<!-- fixed header for navigation -->
+
+<nav class="navbar is-spaced has-shadow">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <img src="images/logo.svg" alt="Logo">
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenu">
+          <span></span>
+            <span></span>
+            <span></span>
+            </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+                {{ range .Site.Data.navmenu }}
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="{{ .url }}">
+                      {{ .name }}
+                    </a>
+                    <div class="navbar-dropdown is-radiusless">
+                        {{ $list := (.sub_menu) }} {{ $len := (len $list) }} {{ range $index, $element := .sub_menu}} {{ if eq (add $index 1) ($len) }}
+                        <hr class="navbar-divider"> {{ end }}
+                        <a class="navbar-item" href="{{ $element.url }}">
+                            {{ $element.name  }}
+                          </a> {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+                <span class="navbar-item ">
+                <a class="button is-radiusless is-info ">
+                   Admissions
+                </a>
+              </span>
+                <span class="navbar-item ">
+                <a class="button is-radiusless is-dark is-outlined ">
+                  Contact Us
+                </a>
+              </span>
+            </div>
+        </div>
+    </div>
+</nav>

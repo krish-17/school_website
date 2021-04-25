@@ -1,0 +1,105 @@
+<!-- storing footer as a part -->
+
+
+
+
+<div class="footer-fill container is-fluid is-centered has-background-black has-text-white py-6">
+    <footer class="footer-content">
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-8">
+          <div class="tile">
+            {{ range .Site.Data.footermenu }}
+                    <div class="tile is-parent has-text-centered-mobile">
+                      <article class="tile is-child has-text-white">
+                          <p class="heading is-4">{{ .name }}</p>
+                          {{ range $index, $element := .sub_menu}}
+                                <p class="bd-footer-link">{{ $element.name }}</p>
+                            {{ end }}
+                        </article>
+                    </div>
+            {{ end }}
+            <div class="tile is-parent is-5">
+              <article class="tile is-child has-text-centered-mobile">
+                <p class="heading is-4">About us</p>
+                <p class="subtitle is-6 has-text-white">
+                  {{.Params.about_us_content}}
+                </p>
+              </article>
+            </div>
+          </div>
+          <hr style="border: 1px solid grey;">
+          <div class="tile is-parent">
+            <article class="tile is-child columns is-vcentered">
+              <div class="column is-8">
+                <p class="bd-notification is-primary has-text-left has-text-white has-text-weight-bold">Bharath Vidhya
+                  Mandir Senior Secondary School</p>
+              </div>
+              <div class="column">
+                <p class="has-text-right">
+                  <span class="icon has-text-dark">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </span>
+                  <span class="icon has-text-dark">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </span>
+                  <span class="icon has-text-dark">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </span>
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="tile is-parent">
+          <div class="tile is-child form-first is-radiusless">
+            <div class="field">
+              <div class="control has-icons-left">
+                <input class="input" type="text" placeholder="Username">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user"></i>
+                </span>
+              </div>
+            </div>
+            <div class="field">
+              <p class="control has-icons-left">
+                <input class="input" type="email" placeholder="Email">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </p>
+            </div>
+            <div class="field has-icons-left">
+              <textarea class="textarea" placeholder="Textarea"></textarea>
+            </div>
+            <div class="field">
+              <p class="control">
+                <button class="button is-link is-fullwidth">
+                  <span>
+                    Send Message
+                  </span>
+                  <span class="icon is-small">
+                    <i class="fas fa-angle-double-right"></i>
+                  </span>
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="border: 1px solid grey;">
+      <div class="tile is-ancestor">
+        <div class="column">
+          <nav class="level">
+            <p class="has-text-centered level-item">
+              <span class="icon has-text-white">
+                <i class="fas fa-copyright"></i>
+              </span> Copyrights 2018. Bharath Vidya Mandir Senior Secondary School (CBSE). All Rights Reserved |
+              Website developed by <span class="icon has-text-dark">
+                <ion-icon name="logo-github"></ion-icon>
+              </span>
+            </p>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </div>

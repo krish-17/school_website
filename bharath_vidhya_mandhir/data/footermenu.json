@@ -1,0 +1,76 @@
+{
+    "item1":{
+        "name" : "Resources",
+        "sub_menu" : [
+                {
+                    "name" : "History of BVM",
+                    "url" : ""
+                },
+                {
+                    "name" : "School Moto",
+                    "url" : ""
+                },
+                 {
+                    "name" : "Core philosophy",
+                    "url" : ""
+                },
+                {
+                    "name" : "Mission and Vision",
+                    "url" : ""
+                },
+                {
+                    "name" : "Principle's message",
+                    "url" : ""
+                },
+                {
+                    "name" : "Infrastructure",
+                    "url" : ""
+                },
+                {
+                    "name" : "Curriculum",
+                    "url" : ""
+                },
+                {
+                    "name" : "Teaching Methodology",
+                    "url" : ""
+                }
+        ]
+    },
+    "item2": {
+        "name" : "Co-curricular",
+        "sub_menu" : [
+                {
+                    "name" : "Sports",
+                    "url" : ""
+                },
+                {
+                    "name" : "School Moto",
+                    "url" : ""
+                },
+                {
+                    "name" : "Art & Craft",
+                    "url" : ""
+                },
+                {
+                    "name" : "Bharatanatyam",
+                    "url" : ""
+                },
+                {
+                    "name" : "Music",
+                    "url" : ""
+                },
+                {
+                    "name" : "Western Dace",
+                    "url" : ""
+                },
+                {
+                    "name" : "Silambam",
+                    "url" : ""
+                },
+                {
+                    "name" : "Blissful Moments",
+                    "url" : ""
+                }
+        ]
+    }
+}

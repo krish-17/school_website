@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BVMSSS - Bharath Vidhya Mandhir Senior Secondary School</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css">
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  <!-- <link rel="stylesheet" href="css/debug.css"> -->
+  <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+  <!-- Navigation bar layout-->
+  <section class="hero is-large">
+    <div class="hero-head">
+       {{ partial "headernav.html" . }}
+    </div>
+    <div class="hero-body" style="min-height: 350px;">
+      <div class="container my-1 has-text-centered">
+        <p class="title is-2 is-spaced has-text-white">
+          {{.Params.hero_title}}
+        </p>
+        <p class="subtitle is-4 has-text-white">
+          {{.Params.hero_caption}}
+        </p>
+        <div class="is-centered is-half">
+          <span>
+            <a class="button is-medium is-radiusless mx-2 is-info">
+              {{.Params.button1_name}}
+            </a>
+          </span>
+          <span>
+            <a class="button is-medium is-radiusless mx-2 is-light is-outlined ">
+              {{.Params.button2_name}}
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-foot">
+    </div>
+  </section>
+
+
+  <!-- This is the first text section  -->
+  <section class="container is-fluid py-6">
+    <div class="columns is-centered my-3">
+      <div class="column is-two-thirds-desktop is-four-fifths-tablet" style="max-width: 1080px;">
+        <div class="columns is-mobile is-multiline is-vcentered">
+          <div class="column is-full-mobile is-half-desktop has-text-centered-mobile has-text-left-tablet">
+            <h2 class="title">{{.Params.first_heading}}</h2>
+            <p>
+              {{.Params.first_content}}
+            </p>
+          </div>
+          <div class="column is-half is-two-fifths-mobile">
+            <figure class="image is-3by2">
+              <img src="images/why_our_school.png">
+            </figure>
+          </div>
+          <div class="column is-half is-two-fifths-mobile">
+            <figure class="image is-3by2">
+              <img src="images/our_moto.png">
+            </figure>
+          </div>
+          <div class="column is-full-mobile is-half-desktop has-text-centered-mobile has-text-right-tablet">
+            <h2 class="title">{{.Params.second_heading}}</h2>
+            <p>
+              {{.Params.second_content}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section for success stories  -->
+  <section class="has-background-info py-6">
+    <div class="container is-fluid my-3">
+      <div class="columns is-centered">
+        <div class="column is-two-thirds-desktop is-four-fifths-tablet" style="max-width: 1080px;">
+          <div class="columns is-mobile is-multiline">
+            <div
+              class="column is-full-mobile is-full-tablet is-two-fifths-desktop has-text-centered-mobile has-text-centered-tablet has-text-left-desktop">
+              <h2 class="title is-spaced">{{.Params.success_title}}</h2>
+              <p class="subtitle">
+                {{.Params.success_content}}
+              </p>
+            </div>
+            <div class="column is-full-mobile is-full-tablet is-three-fifths-desktop">
+              <div class="columns is-mobile is-multiline">
+                {{ range $index,$element := .Site.Data.successdetails.success_meta}}
+                    {{ partial "card.html" (dict "item_num" .id "image_url" .image_url "image_desc" $element.image_desc)}}
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- New try Messages from captain and principal to the students -->
+
+<section class="container is-fluid py-6">
+  <div class="columns is-centered is-multiline my-3">
+    <div class="column is-full-touch is-half-desktop">
+      <div class="columns is-multiline-mobile is-vcentered reverse-columns">
+        <div class="column is-full-mobile is-half">
+          <div class="columns is-multiline is-vcentered">
+            <div class="column is-full">
+                    <figure class="image is-flex is-horizontal-center">
+                        <img class="is-rounded say-size" src="/images/principal2.jpg">
+                    </figure>
+            </div>
+            <div class="column has-text-centered is-full">
+              <h2 class="subtitle is-6 has-text-weight-bold">{{.Params.first_person_name}}</h2>
+            </div>
+          </div>
+        </div>
+        <div class="column is-half has-text-right-desktop has-text-centered-touch is-full-mobile">
+          <h1 class="title is-4">
+            {{.Params.first_person}}
+          </h1>
+          <p class="is-small">
+            {{.Params.first_person_quote}}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="column is-full-touch is-half-desktop">
+      <div class="columns is-multiline-mobile is-vcentered">
+        <div class="column is-half has-text-left-desktop has-text-centered-touch is-full-mobile">
+          <h1 class="title is-4">
+            {{.Params.second_person}}
+          </h1>
+          <p class="is-small">
+            {{.Params.second_person_quote}}
+          </p>
+        </div> 
+        <div class="column is-full-mobile is-half">
+          <div class="columns is-multiline is-vcentered">
+            <div class="column is-full">
+                    <figure class="image is-flex is-horizontal-center">
+                        <img class="is-rounded say-size" src="/images/principal1.jpg">
+                    </figure>
+            </div>
+            <div class="column has-text-centered is-full">
+              <h2 class="subtitle is-6 has-text-weight-bold">{{.Params.second_person_name}}</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- Footer section of the landing page-->
+     {{ partial "footer.html" . }} 
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+{
+    "item1": {
+        "name": "The School",
+        "url": "school.html",
+        "sub_menu": [{
+                "name": "History of BVM",
+                "url": "school.html#history"
+            },
+            {
+                "name": "Core Philosophy",
+                "url": "school.html#core_philosophy"
+            },
+            {
+                "name": "About Us",
+                "url": "school.html#about_us"
+            }
+        ]
+    },
+    "item2": {
+        "name": "Academics",
+        "sub_menu": [{
+                "name": "Acheivements",
+                "url": ""
+            },
+            {
+                "name": "E-Magizines",
+                "url": ""
+            },
+            {
+                "name": "Teaching Faculty",
+                "url": ""
+            }
+        ]
+    },
+    "item3": {
+        "name": "Activities",
+        "sub_menu": [{
+                "name": "Sports",
+                "url": ""
+            },
+            {
+                "name": "Arts",
+                "url": ""
+            },
+            {
+                "name": "Others",
+                "url": ""
+            }
+        ]
+    },
+    "item4": {
+        "name": "FIT India",
+        "sub_menu": [{
+                "name": "Photos",
+                "url": "",
+                "description": ""
+            },
+            {
+                "name": "Videos",
+                "url": ""
+            }
+        ]
+    }
+}
